@@ -1,0 +1,9 @@
+services:
+  job:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: superadmin
+      POSTGRES_PASSWORD: superadmin
+      POSTGRES_DB: job
+    ports:
+      - "5432:5432"
